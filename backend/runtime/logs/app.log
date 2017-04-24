@@ -1,0 +1,1509 @@
+2017-04-24 14:10:19 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Sanpham::description' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('description')
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/helpers/BaseHtml.php(2081): yii\db\BaseActiveRecord->__get('description')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/helpers/BaseHtml.php(1405): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Sanpham), 'description')
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/mihaildev/yii2-ckeditor/CKEditor.php(127): yii\helpers\BaseHtml::activeTextarea(Object(common\models\Sanpham), 'description', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): mihaildev\ckeditor\CKEditor->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/ckeditor_form.php(14): yii\widgets\ActiveField->widget('mihaildev\\ckedi...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\CkEditorWidgets))
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('ckeditor_form', Array, Object(backend\modules\posts\components\CkEditorWidgets))
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/CkEditorWidgets.php(19): yii\base\Widget->render('ckeditor_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\CkEditorWidgets->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(44): yii\base\Widget::widget(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#17 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#23 [internal function]: backend\controllers\SanphamController->actionCreate()
+#24 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#28 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#30 {main}
+2017-04-24 14:10:18 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3rKsCoAQMAAAkosV8AAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3rKsCoAQMAAAkosV8AAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56361'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493035818.947
+    'REQUEST_TIME' => 1493035818
+]
+2017-04-24 14:10:19 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Sanpham::description' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('description')
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/helpers/BaseHtml.php(2081): yii\db\BaseActiveRecord->__get('description')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/helpers/BaseHtml.php(1405): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Sanpham), 'description')
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/mihaildev/yii2-ckeditor/CKEditor.php(127): yii\helpers\BaseHtml::activeTextarea(Object(common\models\Sanpham), 'description', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): mihaildev\ckeditor\CKEditor->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/widgets/ActiveField.php(725): yii\base\Widget::widget(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/ckeditor_form.php(14): yii\widgets\ActiveField->widget('mihaildev\\ckedi...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\CkEditorWidgets))
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('ckeditor_form', Array, Object(backend\modules\posts\components\CkEditorWidgets))
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/CkEditorWidgets.php(19): yii\base\Widget->render('ckeditor_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\CkEditorWidgets->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(44): yii\base\Widget::widget(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#17 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#23 [internal function]: backend\controllers\SanphamController->actionCreate()
+#24 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#28 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#30 {main}
+2017-04-24 14:10:18 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3rKsCoAQMAAA8Qs4gAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3rKsCoAQMAAA8Qs4gAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56360'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493035818.734
+    'REQUEST_TIME' => 1493035818
+]
+2017-04-24 14:11:44 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: backend\modules\posts\components\CkEditorWidgets::feild' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/BaseYii.php(525): yii\base\Component->__set('feild', 'mota1')
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(backend\modules\posts\components\CkEditorWidgets), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('backend\\modules...', Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('backend\\modules...', Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(136): yii\BaseYii::createObject(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(33): yii\base\Widget::widget(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\SanphamController->actionCreate()
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2017-04-24 14:11:44 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3rgMCoAQMAAA6UNX0AAAAH'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3rgMCoAQMAAA6UNX0AAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56369'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493035904.099
+    'REQUEST_TIME' => 1493035904
+]
+2017-04-24 14:12:09 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: seo_title' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php:21
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 21, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('seo_post', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/SeoPostWidgets.php(14): yii\base\Widget->render('seo_post', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\SeoPostWidgets->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(46): yii\base\Widget::widget(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\SanphamController->actionCreate()
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2017-04-24 14:12:09 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3rmcCoAQMAAAkosWAAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3rmcCoAQMAAAkosWAAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56372'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493035929.173
+    'REQUEST_TIME' => 1493035929
+]
+2017-04-24 14:12:47 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: seo_title' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php:21
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 21, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('seo_post', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/SeoPostWidgets.php(14): yii\base\Widget->render('seo_post', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\SeoPostWidgets->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(46): yii\base\Widget::widget(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\SanphamController->actionCreate()
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2017-04-24 14:12:47 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3rv8CoAQMAAA@Bk0YAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3rv8CoAQMAAA@Bk0YAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56375'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493035967.557
+    'REQUEST_TIME' => 1493035967
+]
+2017-04-24 14:13:42 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: seo_title' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php:21
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 21, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('seo_post', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/SeoPostWidgets.php(14): yii\base\Widget->render('seo_post', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\SeoPostWidgets->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(46): yii\base\Widget::widget(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\SanphamController->actionCreate()
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2017-04-24 14:13:42 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3r9sCoAQMAAA9Yq88AAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3r9sCoAQMAAA9Yq88AAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56382'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493036022.206
+    'REQUEST_TIME' => 1493036022
+]
+2017-04-24 14:15:47 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: seo_title' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php:21
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 21, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('seo_post', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/SeoPostWidgets.php(14): yii\base\Widget->render('seo_post', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\SeoPostWidgets->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/_form.php(46): yii\base\Widget::widget(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/views/sanpham/create.php(19): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\SanphamController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\SanphamController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(73): yii\base\Controller->render('create', Array)
+#17 [internal function]: backend\controllers\SanphamController->actionCreate()
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2017-04-24 14:15:46 [::1][-][-][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP3scsCoAQMAAAkrm3kAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP3scsCoAQMAAAkrm3kAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '56393'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493036146.925
+    'REQUEST_TIME' => 1493036146
+]
+2017-04-24 17:16:27 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Sanpham::title' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/db/BaseActiveRecord.php(286): yii\base\Component->__get('title')
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php(70): yii\db\BaseActiveRecord->__get('title')
+#2 [internal function]: backend\controllers\SanphamController->actionCreate()
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/create', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2017-04-24 17:16:27 [::1][-][-][info][application] $_POST = [
+    '_csrf' => 'b0M3d3BjUnohHGUCAic8PwgOTTwoJCMgDSAaEx4CKCw5BWUSQQcAHQ=='
+    'Sanpham' => [
+        'name' => '1'
+        'price' => '1'
+        'coupon' => '1'
+        'status' => '5'
+        'title1' => '1'
+        'title2' => '1'
+        'title3' => '1'
+        'mota1' => '<p>1</p>
+'
+        'mota2' => '<p>1</p>
+'
+        'mota3' => '<p>1</p>
+'
+        'seo_title' => ''
+        'seo_description' => ''
+        'seo_keyword' => ''
+        'fb_title' => ''
+        'fb_description' => ''
+        'fb_image' => ''
+    ]
+    'add' => ''
+    'tags' => ''
+    'idimage' => '0'
+]
+
+$_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4Wy8CoAQMAAAkrm4MAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4Wy8CoAQMAAAkrm4MAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '547'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '61957'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/create'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493046987.103
+    'REQUEST_TIME' => 1493046987
+]
+2017-04-24 17:19:19 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\PostRelationships' not found' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php:93
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-04-24 17:19:19 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'VE9LaHNFTkcaEBkdAQEgAjMCMSMrAj8dNixmDB0kNBECCRkNQiEcIA=='
+    'Sanpham' => [
+        'slug' => '1'
+        'name' => '1'
+        'price' => '1'
+        'coupon' => '1'
+        'status' => '5'
+        'title1' => '1'
+        'title2' => '1'
+        'title3' => '1'
+        'mota1' => '<p>1</p>
+'
+        'mota2' => '<p>1</p>
+'
+        'mota3' => '<p>1</p>
+'
+        'seo_title' => ''
+        'seo_description' => ''
+        'seo_keyword' => ''
+        'fb_title' => ''
+        'fb_description' => ''
+        'fb_image' => ''
+    ]
+    'category' => [
+        0 => '2'
+    ]
+    'add' => ''
+    'tags' => ''
+    'idimage' => '0'
+]
+
+$_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4Xd8CoAQMAAA8Qs6wAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4Xd8CoAQMAAA8Qs6wAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '584'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/sanpham/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '61965'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/update?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/update?id=2'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493047159.49
+    'REQUEST_TIME' => 1493047159
+]
+2017-04-24 17:19:40 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Posts' not found' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/controllers/SanphamController.php:94
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-04-24 17:19:40 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = [
+    '_csrf' => 'VE9LaHNFTkcaEBkdAQEgAjMCMSMrAj8dNixmDB0kNBECCRkNQiEcIA=='
+    'Sanpham' => [
+        'slug' => '1'
+        'name' => '1'
+        'price' => '1'
+        'coupon' => '1'
+        'status' => '5'
+        'title1' => '1'
+        'title2' => '1'
+        'title3' => '1'
+        'mota1' => '<p>1</p>
+'
+        'mota2' => '<p>1</p>
+'
+        'mota3' => '<p>1</p>
+'
+        'seo_title' => ''
+        'seo_description' => ''
+        'seo_keyword' => ''
+        'fb_title' => ''
+        'fb_description' => ''
+        'fb_image' => ''
+    ]
+    'category' => [
+        0 => '2'
+    ]
+    'add' => ''
+    'tags' => ''
+    'idimage' => '0'
+]
+
+$_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4XjMCoAQMAABApHbQAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4XjMCoAQMAABApHbQAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '584'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/sanpham/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '61966'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/update?id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/update?id=2'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493047180.881
+    'REQUEST_TIME' => 1493047180
+]
+2017-04-24 17:28:10 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: seo_title' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php:21
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/views/seo_post.php(21): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 21, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#4 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(234): yii\base\View->render('seo_post', Array, Object(backend\modules\posts\components\SeoPostWidgets))
+#5 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/components/SeoPostWidgets.php(14): yii\base\Widget->render('seo_post', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Widget.php(139): backend\modules\posts\components\SeoPostWidgets->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/views/default/_form.php(24): yii\base\Widget::widget(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/views/default/update.php(20): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\modules\posts\controllers\DefaultController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\modules\posts\controllers\DefaultController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/modules/posts/controllers/DefaultController.php(168): yii\base\Controller->render('update', Array)
+#17 [internal function]: backend\modules\posts\controllers\DefaultController->actionUpdate('87')
+#18 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('posts/default/u...', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#24 {main}
+2017-04-24 17:28:10 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][info][application] $_GET = [
+    'id' => '87'
+]
+
+$_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/curminlead/backend/'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4ZisCoAQMAAA6UNb8AAAAH'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4ZisCoAQMAAA6UNb8AAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/posts'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '62001'
+    'REDIRECT_QUERY_STRING' => 'id=87'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/posts/default/update?id=87'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=87'
+    'REQUEST_URI' => '/curminlead/backend/web/posts/default/update?id=87'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493047690.862
+    'REQUEST_TIME' => 1493047690
+]
+2017-04-24 17:43:58 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sanpham/uploads/images/2017/04/eaVHlNY-1492389741.jpg".' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/uploads...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Không tìm thấy trang.' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-04-24 17:43:57 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/curminlead/backend/'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4dPcCoAQMAAA@Bk3oAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4dPcCoAQMAAA@Bk3oAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/sanpham/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '65161'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/uploads/images/2017/04/eaVHlNY-1492389741.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/uploads/images/2017/04/eaVHlNY-1492389741.jpg'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493048637.948
+    'REQUEST_TIME' => 1493048637
+]
+2017-04-24 17:43:58 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "sanpham/uploads/images/2017/04/eaVHlNY-1492389741.jpg".' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('sanpham/uploads...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Không tìm thấy trang.' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-04-24 17:43:58 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/curminlead/backend/'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4dPsCoAQMAAA@Bk3sAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4dPsCoAQMAAA@Bk3sAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/sanpham/update?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '65161'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/sanpham/uploads/images/2017/04/eaVHlNY-1492389741.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/sanpham/uploads/images/2017/04/eaVHlNY-1492389741.jpg'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493048638.207
+    'REQUEST_TIME' => 1493048638
+]
+2017-04-24 17:44:40 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "posts/default/uploads/images/2017/04/bxmydry-1492389796.jpg".' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('posts/default/u...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Không tìm thấy trang.' in /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/curminlead/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/curminlead/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-04-24 17:44:40 [::1][7][vsvm1vkcq6us25ttbphjs7ob31][info][application] $_COOKIE = [
+    'wordpress_test_cookie' => 'WP Cookie check'
+    'mage-cache-storage' => '{}'
+    'mage-cache-storage-section-invalidation' => '{}'
+    'form_key' => 'vnojPEG63Y5ET6et'
+    'mage-cache-sessid' => 'true'
+    'private_content_version' => '31f0f9c36bb33eb10c1a41e19aa668af'
+    '3efef5e74335f6adf22324a1b0939138' => 'hiaq2rkv98f0er52e0ltpon195'
+    '6eee0b8dbed2d7ddec5de85d175d1b9b' => '53bcsagi4e4qslj915tec6bid3'
+    '9d4bb4a09f511681369671a08beff228' => '4nss78msgec1b0dppo0sm9a190'
+    'f5f35f747ad4a4cb03072c7260847039' => '550c53ak1aepobnpcm05lk3ee7'
+    'joomla_user_state' => 'logged_in'
+    '742cb7847a8d4e48863c65d837031bcb' => '6j8cmbephloi3ut8c1tkher7h6'
+    '_js_datr' => 'T2v8V60aoeba_fTF6deKZeBQ'
+    '_js_reg_fb_ref' => 'https://www.facebook.com/unsupportedbrowser'
+    '_js_reg_fb_gate' => 'https://www.facebook.com/unsupportedbrowser'
+    'wd' => '1211x703'
+    '786d5a4baefaa11270b593eb4312bb9d' => '0qcriuqcfl6di9bgg3m8criag6'
+    '__utma' => '111872281.431886982.1475589878.1479698684.1479698684.1'
+    '__utmc' => '111872281'
+    '__utmz' => '111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '1019ed99e1aedf9fc4be9f506b40c40c' => 'oma8g2slnasgcoi832mr71tm84'
+    '_csrf-frontend' => '407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo\";}'
+    'Phpstorm-3c5d0b5c' => '0fe6c0d7-8264-424d-a454-234e8a4442c0'
+    '__atuvc' => '3|13'
+    'advanced-backend' => '6no73lqd9sbioodie654m2t440'
+    '_csrf-backend' => '02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP\";}'
+    '_ga' => 'GA1.1.431886982.1475589878'
+    'advanced-frontend' => 'boe4l6i0c8fe613euacrq2ih15'
+    'redux_blast' => '1492826584'
+    'redux_current_tab_get' => '0'
+    'yith_wcms_checkout_form' => 'billing_first_name=1234&billing_last_name=Anh&billing_company=&billing_email=anhntk54%40gmail.com&billing_phone=0983327991&billing_country=VN&billing_address_1=ng%C3%B4+quy%E1%BB%81n+-+tp+H%E1%BA%A3i+D%C6%B0%C6%A1ng+-+H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_address_2=&billing_postcode=&billing_city=H%E1%BA%A3i+D%C6%B0%C6%A1ng&billing_state=&order_comments=&payment_method=bacs&_wpnonce=04d183bd12&_wp_http_referer=%2Ftea%2Fcheckout%2F'
+    'redux_current_tab' => '0'
+    '_csrf' => '7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg\";}'
+    'PHPSESSID' => 'vsvm1vkcq6us25ttbphjs7ob31'
+    '_identity' => '8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[7,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/curminlead/backend/'
+    '__id' => 7
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WP4daMCoAQMAABApHc4AAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WP4daMCoAQMAABApHc4AAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/curminlead/backend/web/posts/default/update?id=87'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,vi;q=0.6'
+    'HTTP_COOKIE' => 'wordpress_test_cookie=WP+Cookie+check; mage-cache-storage=%7B%7D; mage-cache-storage-section-invalidation=%7B%7D; form_key=vnojPEG63Y5ET6et; mage-cache-sessid=true; private_content_version=31f0f9c36bb33eb10c1a41e19aa668af; 3efef5e74335f6adf22324a1b0939138=hiaq2rkv98f0er52e0ltpon195; 6eee0b8dbed2d7ddec5de85d175d1b9b=53bcsagi4e4qslj915tec6bid3; 9d4bb4a09f511681369671a08beff228=4nss78msgec1b0dppo0sm9a190; f5f35f747ad4a4cb03072c7260847039=550c53ak1aepobnpcm05lk3ee7; joomla_user_state=logged_in; 742cb7847a8d4e48863c65d837031bcb=6j8cmbephloi3ut8c1tkher7h6; _js_datr=T2v8V60aoeba_fTF6deKZeBQ; _js_reg_fb_ref=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; _js_reg_fb_gate=https%3A%2F%2Fwww.facebook.com%2Funsupportedbrowser; wd=1211x703; 786d5a4baefaa11270b593eb4312bb9d=0qcriuqcfl6di9bgg3m8criag6; __utma=111872281.431886982.1475589878.1479698684.1479698684.1; __utmc=111872281; __utmz=111872281.1479698684.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 1019ed99e1aedf9fc4be9f506b40c40c=oma8g2slnasgcoi832mr71tm84; _csrf-frontend=407358484cfbb94a5e849d9d0c88b8bf9990698f1ed4b806bf84dcedc676ce5ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eOKtVotJYr_GTme48bO9KMuA9SYuv_Bo%22%3B%7D; Phpstorm-3c5d0b5c=0fe6c0d7-8264-424d-a454-234e8a4442c0; __atuvc=3%7C13; advanced-backend=6no73lqd9sbioodie654m2t440; _csrf-backend=02ac28566d635d66babf110bb32e68e13484326a55dce379ee0dd8ad008d7a90a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mDyLCXqusoUa-MfAFbP2U8b9RwwLkcXP%22%3B%7D; _ga=GA1.1.431886982.1475589878; advanced-frontend=boe4l6i0c8fe613euacrq2ih15; redux_blast=1492826584; redux_current_tab_get=0; yith_wcms_checkout_form=billing_first_name%3D1234%26billing_last_name%3DAnh%26billing_company%3D%26billing_email%3Danhntk54%2540gmail.com%26billing_phone%3D0983327991%26billing_country%3DVN%26billing_address_1%3Dng%25C3%25B4%2Bquy%25E1%25BB%2581n%2B-%2Btp%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%2B-%2BH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_address_2%3D%26billing_postcode%3D%26billing_city%3DH%25E1%25BA%25A3i%2BD%25C6%25B0%25C6%25A1ng%26billing_state%3D%26order_comments%3D%26payment_method%3Dbacs%26_wpnonce%3D04d183bd12%26_wp_http_referer%3D%252Ftea%252Fcheckout%252F; redux_current_tab=0; _csrf=7460262a470f1693225bd18a4592be7a1f8766030fdb456e710f37c53d7061fea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N_RurDnEgMzKXGqZbc-dnazVVFRe1dRg%22%3B%7D; PHPSESSID=vsvm1vkcq6us25ttbphjs7ob31; _identity=8a60dab5f08ba46dc8035abc016d7b1e118ae6f8cefbd9d2d6ac45deda158ae8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B7%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Unix) OpenSSL/1.0.1q PHP/5.6.15 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/htdocs/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/htdocs/curminlead/backend/web/index.php'
+    'REMOTE_PORT' => '65230'
+    'REDIRECT_URL' => 'http://localhost/curminlead/backend/web/posts/default/uploads/images/2017/04/bxmydry-1492389796.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/curminlead/backend/web/posts/default/uploads/images/2017/04/bxmydry-1492389796.jpg'
+    'SCRIPT_NAME' => '/curminlead/backend/web/index.php'
+    'PHP_SELF' => '/curminlead/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493048680.518
+    'REQUEST_TIME' => 1493048680
+]
